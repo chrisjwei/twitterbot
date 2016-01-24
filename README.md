@@ -1,12 +1,12 @@
 ## Gauntlet: Twitter Image Bot
 ##### Summary
-This is my twitter image bot for **IACD Spring 2016**. Includes as script that runs the twitter bot, posting tweets every 30 minutes depicting a fictional planet and fictional stats alongside the planet. The program that generates the images of the planets can be compiled by moving the `planetGenerator_vs` folder into your `openframeworks/apps/myApps` folder, and building from Visual Studios, or by a typical OpenFrameworks Makefile.\
-After building, you can try and make a couple fake planets before tweeting. Move `planetGenerator` into the top directory, and run with `./planetGenerator sourceimage.jpg outputimage.jpg`, where your sourceimage lives in `data/source_images/` and your output image will live in `data/`\
-Now, create file `secret.py` and define your own twitter app's\
-`CONSUMER_SECRET = "xxx"`\
-`CONSUMER_KEY = "xxx"`\
-`ACCESS_TOKEN = "xxx"`\
-`ACCESS_TOKEN_SECRET = "xxx"`\
+This is my twitter image bot for **IACD Spring 2016**. Includes as script that runs the twitter bot, posting tweets every 30 minutes depicting a fictional planet and fictional stats alongside the planet. The program that generates the images of the planets can be compiled by moving the `planetGenerator_vs` folder into your `openframeworks/apps/myApps` folder, and building from Visual Studios, or by a typical OpenFrameworks Makefile.<br />
+After building, you can try and make a couple fake planets before tweeting. Move `planetGenerator` into the top directory, and run with `./planetGenerator sourceimage.jpg outputimage.jpg`, where your sourceimage lives in `data/source_images/` and your output image will live in `data/`<br />
+Now, create file `secret.py` and define your own twitter app's<br />
+`CONSUMER_SECRET = "xxx"`<br />
+`CONSUMER_KEY = "xxx"`<br />
+`ACCESS_TOKEN = "xxx"`<br />
+`ACCESS_TOKEN_SECRET = "xxx"`<br />
 From here you can now run your own twitter bot with `python run.py`
 
 ##### Twitter Handle
