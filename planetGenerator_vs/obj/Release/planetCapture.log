@@ -1,7 +1,0 @@
-﻿  main.cpp
-  ofApp.cpp
-     Creating library bin\planetCapture.lib and object bin\planetCapture.exp
-  LINK : /LTCG specified but no code generation required; remove /LTCG from the link command line to improve linker performance
-  planetCapture.vcxproj -> C:\Users\Chris\Documents\Visual Studio 2015\openFrameworks\apps\myApps\planetCapture\bin\planetCapture.exe
-  
-  	                   9	C:\Users\Chris\Documents\Visual Studio 2015\openFrameworks\export\vs\Win32\

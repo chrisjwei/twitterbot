@@ -7,7 +7,7 @@ SRC_IMAGE_DIR = "data/source_images/"
 OUT_IMAGE_DIR = "data/"
 OUT_IMAGE_PREFIX = "planet_"
 OUT_IMAGE_SUFFIX = ".jpg"
-PERIOD = 1800 #seconds
+PERIOD = 120 #seconds
 
 class Tweet():
   
@@ -92,8 +92,7 @@ class Planet():
     else:
       life = "No life detected."
     classification = self.classify()
-    return '"' + self.name + '" ' + classification + ' (' + str(self.mass) +\
-      'Me, '+ str(self.radius) + 'Re).\n A balmy ' + str(self.temp) + \
+    return '"' + self.name + '" ' + classification + '.\n A balmy ' + str(self.temp) + \
       'K surface temperature. ' + life
 
 def generateTweet(file):
@@ -111,7 +110,10 @@ def main():
   while(1):
     i = random.randint(0, numFiles-1)
     tweet = generateTweet(files[i]);
-    tweet.post(api);
+    try:
+      tweet.post(api);
+    except:
+      print "Error encountered when posting tweet."
     time.sleep(PERIOD) # every 15 minutes
 
 main()
