@@ -7,7 +7,7 @@ SRC_IMAGE_DIR = "data/source_images/"
 OUT_IMAGE_DIR = "data/"
 OUT_IMAGE_PREFIX = "planet_"
 OUT_IMAGE_SUFFIX = ".jpg"
-PERIOD = 120 #seconds
+PERIOD = 600 #seconds
 
 class Tweet():
   
